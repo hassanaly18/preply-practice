@@ -1,0 +1,4 @@
+vinegar,12
+chips,10
+pasta,15
+fries,10

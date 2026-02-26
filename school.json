@@ -1,0 +1,27 @@
+{
+    "students": [
+        {
+            "name": "Logan",
+            "age": 16
+        },
+        {
+            "name": "AJ",
+            "age": 15
+        },
+        {
+            
+        }
+    ],
+    "teachers": [
+        {
+            "name": "Walter",
+            "subject": "Chemistry"
+        },
+        {
+            "name": "Jesse",
+            "subject": "Business"
+        }
+    ],
+    "expenses": [ 1200, 150, 675, 800],
+    "Principal": "Mr. Johnson"
+}

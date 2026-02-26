@@ -1,0 +1,2 @@
+Today I learned file handling
+Yesterday we did tuples and objects
