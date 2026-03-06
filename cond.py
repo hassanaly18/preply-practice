@@ -2,19 +2,232 @@
 # if, else, elif, match/case
 # nested if else
 
-corr_user = "hassan18"
-corr_pass = "abc123"
+total = int(input("Enter total shopping amount: "))
 
-username = input("Enter username: ")
-password = input("Enter password: ")
-
-if username == corr_user:
-    if password == corr_pass:
-        print("Logged in..!")
+if total > 2000:
+    card = input("Do you have a membership card?(yes/no): ")
+    
+    if card == "yes":
+        total = total * 0.75
+        print("The total after 25 percent discount:", total)
     else:
-        print("wrong password..!")
-else:
-    print("Wrong username..!")
+        total = total * 0.9
+        print("The total after 10 percent discount:", total)
+
+else: 
+    if total >1000:
+        total = total * 0.95
+        print("The total after 5 percent discount:", total)
+    else:
+        print("The total after no discount:", total)
+        
+print("Total after updating it:", total)
+
+
+
+
+
+
+
+
+
+
+
+
+
+# balance = 9000
+# age = int(input("Enter your age: "))
+
+# if age >= 18:
+#     movie = input("Do you wanna watch a 3D movie(yes/no): ")
+#     if movie == "yes":
+#         print("Price: $800")
+#     else:
+#         print("Price: $600")
+
+# else:
+#     parent = input("Are you with a parent(yes/no): ")
+#     if parent == "yes":
+#         print("Price: $500")
+#     else:
+#         print("You can not watch this movie")    
+
+
+
+
+
+
+
+
+
+
+
+
+
+# corr_user = "hassan18"
+# corr_pass = "abc123"
+
+# username = input("Enter username: ")
+# password = input("Enter password: ")
+
+# if username == corr_user:
+#     if password == corr_pass:
+#         print("you are logged in")
+#     else:
+#         print("wrong password")
+# else:
+#     print("Wrong username")
+
+
+
+
+
+
+
+
+
+
+
+# age = int(input("Enter your age: "))
+
+# if age >= 18:
+#     license = input("Do you have a license?(yes/no): ")
+#     if license == "yes":
+#         print("You can drive")
+#     else:
+#         print("You can not drive, no license")
+# else:
+#     print("You can not drive, underage")
+
+
+
+
+
+
+
+
+
+
+
+# username = input("Enter username: ")
+# password = input("Enter password: ")
+
+# if username not in password:
+#     print(True)
+# else:
+#     print(False)
+
+
+
+
+
+# age = int(input("Enter your age: "))
+# price =0
+
+# if age >= 18:
+#     movie3d = input("Do you want to watch a 3D movie?(yes/no): ")
+    
+#     if movie3d == "yes":
+#         price = 800
+#     else:
+#         price =600
+
+# else:
+#     parent = input("Are you with a parent? (yes/no): ")
+#     if parent == "yes":
+#         price=500
+#     else:
+#         print("You cannot watch this movie")
+
+# print("Price for ticket:", price)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# corr_user = "hassan123"
+# corr_pass = "abc123"
+
+# username = input("Enter username: ")
+# password = input("Enter password: ")
+
+# if username == corr_user:
+#     if password == corr_pass:
+#         print("You're logged in")
+#     else:
+#         print("Incorrect password")
+        
+# elif username != corr_user and password!=corr_pass:
+#     print("Incorrect username and password")
+# else:
+#     print("incorrect username")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# age = int(input("Enter your age: "))
+
+# if age <18:
+#     print("You can not drive, underage")
+# else:
+#     license = input("Do you have a license(yes/no): ")
+#     if license == "yes":
+#         print("You can drive")
+#     elif license == "no":
+#         print("You can not drive, no license")
+#     else:
+#         print("Invalid input")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# corr_user = "hassan18"
+# corr_pass = "abc123"
+
+# username = input("Enter username: ")
+# password = input("Enter password: ")
+
+# if username == corr_user:
+#     if password == corr_pass:
+#         print("Logged in..!")
+#     else:
+#         print("wrong password..!")
+# else:
+#     print("Wrong username..!")
 
 
 

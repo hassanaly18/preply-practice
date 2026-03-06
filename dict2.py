@@ -1,52 +1,118 @@
-#question 11
+cart =[
+    {"name": "apple", "price": 89},
+    {"name": "eggs", "price": 78}]
 
-cart = []
-
-def addItem():
+def removeItem():
     global cart
-    name = input("\nEnter name of item: ")
-    price = input("Enter price of item: ")
-    cart.append({"name": name, "price": price})
-    print(name, "added to cart successully..!")
-
-def showItems(cart):
-    print("\n")
-    for item in cart:
-        print(item["name"], ":", item["price"])
-        
-def removeitem():
-    global cart
-    name = input("Enter name of item to remove: ")
+    name = input("Enter item to remove: ")
     for item in cart:
         if name == item["name"]:
             cart.remove(item)
-            print(item["name"], "removed from cart")
-
-def calc_bill(cart):
+            print("Item deleted successfully")
+            break
+    
+def calculate_total(cart):
     total =0
     for item in cart:
-        total = total + item["price"]
-    print("The total bill:", total)
+        total += item["price"]
+    print("The total bill: $", total)
 
-print("**** Mini Store System ****")
+def addItem():
+    global cart
+    name = input("\nEnter item's name: ")
+    price = int(input("Enter item's price: "))
+    item = {
+        "name": name,
+        "price": price
+    }
+    cart.append(item)
+    print(name, "added to cart successfully")
+
+def showItems():
+    global cart
+    print("\nItems in tha cart\n")
+    for item in cart:
+        print(item["name"], "|", item["price"])
 
 while True:
-    print("\n1. Add item \n2. Show Items \n3. Remove an item \n4. Calculate total bill \n5. Exit")
-    choice = int(input("What do you wanna do: "))
+    print("\n1. Add item \n2. Show all items \n3. Calculate total \n4. Remove an Item \n5.Exit")
+    choice = int(input("Enter your choice: "))
     
     match choice:
         case 1:
             addItem()
         case 2:
-            showItems(cart)
+            showItems()
         case 3:
-            removeitem()
+            calculate_total(cart)
         case 4:
-            calc_bill(cart)
-        case 5: 
+            removeItem()
+        case 5:
             break
         case _:
-            print("Invalid input")
+            print("Invalid input..")
+
+
+
+
+
+
+
+
+
+
+
+
+
+#question 11
+
+# cart = []
+
+# def addItem():
+#     global cart
+#     name = input("\nEnter name of item: ")
+#     price = input("Enter price of item: ")
+#     cart.append({"name": name, "price": price})
+#     print(name, "added to cart successully..!")
+
+# def showItems(cart):
+#     print("\n")
+#     for item in cart:
+#         print(item["name"], ":", item["price"])
+        
+# def removeitem():
+#     global cart
+#     name = input("Enter name of item to remove: ")
+#     for item in cart:
+#         if name == item["name"]:
+#             cart.remove(item)
+#             print(item["name"], "removed from cart")
+
+# def calc_bill(cart):
+#     total =0
+#     for item in cart:
+#         total = total + item["price"]
+#     print("The total bill:", total)
+
+# print("**** Mini Store System ****")
+
+# while True:
+#     print("\n1. Add item \n2. Show Items \n3. Remove an item \n4. Calculate total bill \n5. Exit")
+#     choice = int(input("What do you wanna do: "))
+    
+#     match choice:
+#         case 1:
+#             addItem()
+#         case 2:
+#             showItems(cart)
+#         case 3:
+#             removeitem()
+#         case 4:
+#             calc_bill(cart)
+#         case 5: 
+#             break
+#         case _:
+#             print("Invalid input")
             
             
 
