@@ -2,26 +2,26 @@
 # if, else, elif, match/case
 # nested if else
 
-total = int(input("Enter total shopping amount: "))
+# total = int(input("Enter total shopping amount: "))
 
-if total > 2000:
-    card = input("Do you have a membership card?(yes/no): ")
+# if total > 2000:
+#     card = input("Do you have a membership card?(yes/no): ")
     
-    if card == "yes":
-        total = total * 0.75
-        print("The total after 25 percent discount:", total)
-    else:
-        total = total * 0.9
-        print("The total after 10 percent discount:", total)
+#     if card == "yes":
+#         total = total * 0.75
+#         print("The total after 25 percent discount:", total)
+#     else:
+#         total = total * 0.9
+#         print("The total after 10 percent discount:", total)
 
-else: 
-    if total >1000:
-        total = total * 0.95
-        print("The total after 5 percent discount:", total)
-    else:
-        print("The total after no discount:", total)
+# else: 
+#     if total >1000:
+#         total = total * 0.95
+#         print("The total after 5 percent discount:", total)
+#     else:
+#         print("The total after no discount:", total)
         
-print("Total after updating it:", total)
+# print("Total after updating it:", total)
 
 
 
