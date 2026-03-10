@@ -2,6 +2,165 @@
 # if, else, elif, match/case
 # nested if else
 
+day = int(input("Enter day number: "))
+
+match day:
+    case 1:
+        print("Monday")
+    case 2:
+        print("tuesday")
+    case 3:
+        print("wed")
+    case 4:
+        print("thurs")
+    case 5:
+        print("fri")
+    case 6:
+        print("sat")
+    case 7:
+        print("sun")
+    case _:
+        print("invalid day")
+
+
+# if day==1:
+#     print("Monday")
+# elif day ==2:
+#     print("Tue")
+# elif day ==3:
+#     print("Wed")
+# elif day ==4:
+#     print("Thurs")
+# elif day ==5:
+#     print("Fri")
+# elif day ==6:
+#     print("Sat") 
+# elif day ==7:
+#     print("SUnday")
+# else:
+#     print("wrong input")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# num1 = int(input("Enter first number: "))
+# num2 = int(input("Enter second number: "))
+
+# operator = input("Enter your operator(+, -, *, /): ")
+
+# match operator:
+#     case "+":
+#         print("The sum is", num1+num2)
+#     case "-":
+#         order = int(input("Enter 1 for num1-num2 and 2 for num2-num1: "))
+       
+#         if order==1:
+#             print("The difference is", num1-num2)
+#         elif order ==2:
+#             print("The difference is", num2-num1)
+#         else:
+#             print("Invalid input")
+            
+#     case "*":
+#         print("The product is", num1*num2)
+#     case "/":
+#         print("The quotient is", num1/num2)
+#     case _:
+#         print("Invalid operator")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# day = int(input("Enter a day number: "))
+
+# match day:
+#     case 1:
+#         print("Monday")
+#     case 2:
+#         print("Tue")
+#     case 3:
+#         print("Wed")
+#     case 4:
+#         print("thur")
+#     case 5:
+#         print("fri")
+#     case 6:
+#         print("sat")
+#     case 7:
+#         print("sun")
+#     case _:
+#         print("invalid")
+    
+    
+
+# if day==1:
+#     print("Monday")
+# elif day ==2:
+#     print("Tue")
+# elif day ==3:
+#     print("Wed")
+# elif day ==4:
+#     print("Thurs")
+# elif day ==5:
+#     print("Fri")
+# elif day ==6:
+#     print("Sat")
+# elif day ==7:
+#     print("SUnday")
+# else:
+#     print("wrong input")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # total = int(input("Enter total shopping amount: "))
 
 # if total > 2000:
