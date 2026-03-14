@@ -1,3 +1,56 @@
+#question 8
+sentence = input("ENter sentence: ")
+
+print("The first occurence of python:", sentence.find("python"))
+
+sentence = sentence.replace("python", "Java")
+sentence = sentence.title()
+print(sentence)
+
+
+
+
+
+
+
+
+
+
+
+#question 6
+
+# sentence = input("ENter sentence: ")
+# words = sentence.split()
+
+# print(words)
+# print("The number of words: ",len(words))
+
+# sentence = ("-").join(words)
+# print(sentence)
+
+
+
+
+
+
+
+
+#question 5
+
+# email = input("Enter an email: ")
+# email = email.strip()
+# email = email.lower()
+
+# print(email)
+
+# if email.find("@") != -1 and email.endswith(".com"):
+#     print("Valid email")
+# else:
+#     print("Invalid email")
+
+
+
+
 #question 4
 # sentence = input("Entar a sentence: ")
 
